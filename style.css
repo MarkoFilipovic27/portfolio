@@ -32,10 +32,13 @@ body::-webkit-scrollbar-thumb {
 
 #navbar {
   position: fixed;
+  top: 0;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
   overflow: scroll;
   color: linen;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .navbar-nav {
@@ -44,7 +47,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   height: 5rem;
   width: 100%;
   overflow: overlay;
@@ -90,54 +93,6 @@ body::-webkit-scrollbar-thumb {
   margin: 0 1.5rem;
   filter: invert(100%);
 }
-
-.fa-primary {
-  color: #ff7eee;
-}
-
-.fa-secondary {
-  color: #df49a6;
-}
-
-.fa-primary,
-.fa-secondary {
-  transition: var(--transition-speed);
-}
-
-.logo {
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: var(--text-secondary);
-  background: var(--bg-secondary);
-  font-size: 1.5rem;
-  letter-spacing: 0.3ch;
-  width: 100%;
-  overflow: auto;
-}
-
-.logo img {
-  transform: rotate(0deg);
-  transition: var(--transition-speed);
-  width: 25%;
-  border-radius: 50%;
-  margin-left: 10%;
-}
-
-.logo-text
-{
-  display: inline;
-  position: absolute;
-  left: -999px;
-  transition: var(--transition-speed);
-}
-
-#navbar:hover .logo img {
-  /*transform: rotate(-180deg);*/
-}
-
-/*AANPASSINGEN MARKO*/
 
 #welcome-section{
   background-color: var(--bg-primary);
@@ -263,7 +218,8 @@ img {
     top: 0;
     height: 5rem;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: var(--bg-primary);
   }
 
   #navbar:hover {
